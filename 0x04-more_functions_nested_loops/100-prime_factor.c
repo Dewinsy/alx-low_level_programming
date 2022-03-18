@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - Entry point
+ * main - print the largest primefactor of a number
  * Return: Always 0
  */
 int main(void)
