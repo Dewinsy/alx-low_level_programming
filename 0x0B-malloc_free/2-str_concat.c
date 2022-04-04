@@ -1,47 +1,31 @@
-#include "holberton.h"
 #include <stdlib.h>
+#include "main.h"
 
 /**
-* str_concat - concatenates two strings.
-* @s1: The first string to print.
-* @s2: The second string to print.
-* Return: The sum of two strings.
-*/
+ * _strdup - Entry point
+ *@str: string we need to duplicate
+ *
+ * Return: Return success.
+**/
 
-char *str_concat(char *s1, char *s2)
+char *_strdup(char *str)
 {
-	int a, b;
-	int i, j = 0;
-	char *p;
+char *a;
+int i, c;
 
-	if (s1 == NULL)
-	{
-		s1 = "";
-	}
-	if (s2 == NULL)
-	{
-		s2 = "";
-	}
+if (str == NULL)
+return (NULL);
 
-	for (a = 0; s1[a] || s2[a]; a++)
-	{
-		b++;
-	}
+for (i = 0; str[i] != '\0'; i++)
+;
 
-	p = malloc(sizeof(char) * b);
+a = malloc(i * sizeof(*a) + 1);
+if (a == NULL)
+return (NULL);
 
-	if (p == NULL)
-	{
-		return (NULL);
-	}
+for (c = 0; c < i; c++)
+a[c] = str[c];
+a[c] = '\0';
 
-	for (i = 0; s1[i]; i++)
-	{
-		p[j++] = s1[i];
-	}
-	for (i = 0; s2[i]; i++)
-	{
-		p[j++] = s2[i];
-	}
-	return (p);
+return (a);
 }
