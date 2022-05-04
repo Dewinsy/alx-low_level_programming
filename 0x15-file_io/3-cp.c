@@ -5,7 +5,7 @@
 #include <sys/stat.h>
 #include <fcntl.h>
 #include <unistd.h>
-#include "holberton.h"
+#include "main.h"
 
 #ifndef BUF_SIZE
 #define BUF_SIZE 1024

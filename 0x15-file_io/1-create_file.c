@@ -3,7 +3,7 @@
 #include <sys/types.h>
 #include <sys/stat.h>
 #include <fcntl.h>
-#include "holberton.h"
+#include "main.h"
 
 /**
  * create_file -  creates a file.
